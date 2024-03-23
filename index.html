@@ -10,12 +10,20 @@
     <body>
         <script src="./quotes.js"></script>
 
-        <warpper id="quote-box">
-            <div id="text"></div>
-            <div id="author"></div>
-            <button id="new-quote">New Quote</button>
-            <a href="#" id="tweet-quote">Tweet</a>
-        </warpper>
+
+        <warpper id="quote-box" class="container text-center mt-5 h-100 d-flex align-items-center justify-content-center">
+            <div class="card border-dark mb-3" style="max-width: 18rem;">
+                <div class="card-header">Random Quote Machine</div>
+                <div class="card-body">
+                    <h5 class="card-title" id="author"></h5>
+                    <p class="card-text" id="text"></p>
+                    <button id="new-quote">New Quote</button>
+                    <a href="https://twitter.com/intent/tweet?text=test" id="tweet-quote" target="_blank">Tweet</a>
+                </div>
+            </div>
+        </warpper>  
+
+
 
         <script>
             document.getElementById('text').innerHTML = QUOTES[1].quote;
